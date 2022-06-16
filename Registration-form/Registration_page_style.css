@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    background: url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    background: red;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+}
+
+#body-contents {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    position: absolute;
+    z-index: 2;
+    left: 50px;
+}
+
+.left-content {
+    margin: 25% 25px;
+    padding: 5px;
+}
+
+.left-content h3 {
+    font-size: 45px;
+    color: white;
+    font-weight: 800;
+}
+
+.left-content p {
+    font-size: 16px;
+    line-height: normal;
+    color: white;
+}
+
+.right-content {
+    margin: auto;
+}
+
+button {
+    text-decoration: none;
+    background: hsl(248,32%,49%);
+    padding: 13px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button span {
+    color: hsl(246,25%,77%);
+}
+
+form {
+    background: white;
+    padding: 3%;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+input[type = text], input[type = password], input[type = email] {
+    width: 90%;
+    margin: 15px;
+    padding: 5px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+}
+
+input[type = submit] {
+    width: 90%;
+    text-align: center;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+small {
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+small span {
+    color: hsl(0, 100%,74%);
+}
+
+@media (max-width: 500px) {
+
+    body {
+        background: url(images/bg-intro-mobile.png);
+    }
+
+    #body-contents {
+        display: block;
+    }
+    .left-content h3 {
+        font-size: 30px;
+        color: white;
+        font-weight: 800;
+    }
+
+    .left-content p {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 70px;
+}
+    .left-content {
+        margin: 25% 25px;
+        padding: 15px;
+        text-align: center;
+}
+    .left-content p {
+        padding-top: 15px;
+        word-spacing: 2px;
+    }
+}    
